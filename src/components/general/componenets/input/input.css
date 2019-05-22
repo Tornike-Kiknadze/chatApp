@@ -1,0 +1,101 @@
+.general-input {
+  height: 3.5rem;
+  font-size: 1.2rem;
+  background-color: rgb(51, 45, 45);
+  border-width: 0px;
+  border: none;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.general-input button:hover svg path {
+  fill: #379391;
+  opacity: 1;
+}
+.general-input button:active svg path {
+  fill: #137472;
+  opacity: 1;
+}
+.general-input svg path {
+  transition: all ease-in-out 0.2s;
+}
+
+.general-input input {
+  width: 100%;
+  padding-left: 2rem;
+  color: #b3bfb8;
+  font-family: inherit;
+}
+.general-input-type {
+  width: 80%;
+
+  font-size: 1.2rem;
+  background-color: rgb(51, 45, 45);
+  border-width: 0px;
+  border: none;
+  height: 100%;
+
+  color: #4f7cac;
+}
+
+.tooltip {
+  text-align: center;
+  background: #33817e;
+  padding: 5px;
+  border-radius: 3px;
+  -webkit-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+  -webkit-animation-name: jump;
+  animation-name: jump;
+
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  width: auto;
+  position: absolute;
+  color: #444;
+  top: -50%;
+  left: 5%;
+}
+.tooltip::before,
+.tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.tooltip::after {
+  border: 8px solid transparent;
+  border-top-color: #33817e;
+}
+
+.sendbutton {
+  position: absolute;
+  right: 1rem;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@keyframes jump {
+  0% {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+  }
+  50% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+  100% {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+  }
+}

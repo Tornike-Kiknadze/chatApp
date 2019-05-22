@@ -1,0 +1,7 @@
+.general {
+  background-color: #3c4046ec;
+  flex: 3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}

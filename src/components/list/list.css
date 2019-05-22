@@ -1,0 +1,20 @@
+.list {
+  background-color: #1d232af3;
+  flex: 1;
+  height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+}
+.list svg {
+  top: 0.7rem;
+  left: 1rem;
+}
+
+.list-users-wrapper {
+  z-index: 1;
+  overflow: scroll;
+  overflow-x: hidden;
+}

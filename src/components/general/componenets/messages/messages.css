@@ -1,0 +1,56 @@
+.message {
+  width: 50%;
+  background-color: #7e8d85;
+  min-height: auto;
+  text-align: left;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 1rem;
+  font-size: 1.1rem;
+
+  position: relative;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all linear 0.2s;
+}
+
+.message-green {
+  width: auto;
+  background-color: #b3bfb8;
+  min-height: auto;
+  text-align: left;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 2rem 2rem 2rem 25rem;
+  font-size: 1.1rem;
+  position: relative;
+
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.message::before {
+  content: "";
+  width: 5%;
+  border: 0.2em solid #7e8d85;
+  border-color: #7e8d85 transparent transparent #7e8d85;
+  background-color: #7e8d85;
+  height: 20%;
+  left: -1.3rem;
+  position: absolute;
+  z-index: 0;
+  -webkit-clip-path: polygon(0 0, 100% 100%, 100% 0);
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
+}
+.message-green::before {
+  content: "";
+  width: 5%;
+  border: 0.2em solid #b3bfb8;
+  border-color: #b3bfb8 transparent transparent #b3bfb8;
+  background-color: #b3bfb8;
+  background-color: #b3bfb8;
+  height: 20%;
+  right: -1.2rem;
+  position: absolute;
+  z-index: 0;
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 0);
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+}

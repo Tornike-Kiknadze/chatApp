@@ -1,0 +1,7 @@
+.general-content {
+  flex: 8;
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  overflow-y: scroll;
+}
